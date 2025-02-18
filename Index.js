@@ -60,9 +60,9 @@ client.on('interactionCreate', async interaction => {
                 console.error('Error writing to commandCounts.json:', error);
                 return;
             }
-
+                 // Respond to the user if they haven't voted yet
             await interaction.reply(`${user.username} voted that <@548476592083697675> is a stinky fox!`);
-        } else {
+        } else { //if the user has already voted
             await interaction.reply("You already voted");
         }
     } else if (commandName === "yes") {  
