@@ -5,8 +5,8 @@ require('dotenv').config();
 
 const commands = [
     {
-        name: "fenno",
-        description: "Stinky fox",
+        name: "fenno_stinks",
+        description: "vote that fenno is a stinky fox",
     },
 ];
 
