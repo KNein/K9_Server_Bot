@@ -12,6 +12,10 @@ const commands = [
         name: "yes",
         description: "no",
     },
+    {
+        name: "fenno_stinks_count",
+        description: "get the current ammount of how many people think fenno is stinky",
+    }
 ];
 
 

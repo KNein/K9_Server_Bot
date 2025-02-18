@@ -68,7 +68,22 @@ client.on('interactionCreate', async interaction => {
     } else if (commandName === "yes") {  
         console.log(`Processing "yes" command for user: ${user.username}`);
         await interaction.reply(`No`);
-    }
+    } else if (commandName === "fenno_stinks_count") {
+        console.log(`Processing "fenno_stinks_count" command for user: ${user.username}`);
+        await interaction.reply(`The current amount of people who think <@548476592083697675> is a stinky fox is: ${commandCounts.fenno.count}\nIf you also think he is stinky use /fenno_stinks`);
+        };
 });
+
+
+
+
+
+
+
+
+
+
+
+
 
 client.login(process.env.DISCORDBOTTOKEN);
