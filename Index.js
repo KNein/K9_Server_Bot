@@ -27,7 +27,8 @@ client.on('interactionCreate', async interaction => {
         return;
     }
 
-    if (commandName === "fenno_stinks") {  // Updated command name
+    if (commandName === "fenno_stinks") {  
+
         console.log(`Processing "fenno_stinks" command for user: ${user.username}`);
 
         // Check if the user ID is new
@@ -49,7 +50,13 @@ client.on('interactionCreate', async interaction => {
             await interaction.reply(`${user.username} voted that <@548476592083697675> is a stinky fox!`);
         } else {
             await interaction.reply("You already voted");
-        }
+        } // new command/responses
+
+    }
+    
+    else if (commandName === "yes") {  
+        console.log(`Processing "yes" command for user: ${user.username}`);
+        await interaction.reply(`No`);
     }
 });
 

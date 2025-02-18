@@ -8,6 +8,10 @@ const commands = [
         name: "fenno_stinks",
         description: "vote that fenno is a stinky fox",
     },
+    {
+        name: "yes",
+        description: "no",
+    },
 ];
 
 
